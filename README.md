@@ -18,10 +18,16 @@ As a user, I want to...
 
 # Installation Instructions
 
+# Wireframes
+
+# ERD
+
 # RESTful Routing
 
 # Sprint Breakdown
 
 # MVP
 
+# Stretch Goals
 
+# Future Plans
