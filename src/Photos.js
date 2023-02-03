@@ -1,12 +1,10 @@
 import React from 'react'
 
 export default function Photos() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+    return (
+        <>
 
-import React from 'react'
+        </>
+    )
+}
 

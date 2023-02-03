@@ -1,7 +1,12 @@
 import './App.css';
 
 function App() {
-  return (null);
+  
+  return (
+    <>
+      <Photos />
+    </>
+  );
 }
 
 export default App;
