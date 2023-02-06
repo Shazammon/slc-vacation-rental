@@ -1,3 +1,4 @@
-console.log('hello')
+import fetch from "node-fetch"
 
-fetch('https://reques.in/api/users')
+fetch('https://reqres.in/api/users')
+    .then(res => console.log(res))
