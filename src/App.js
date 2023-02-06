@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useRef } from 'react';
+import Photos from './Photos';
 
 function App() {
   const ref = useRef(0)
