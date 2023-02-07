@@ -6,7 +6,16 @@ function App() {
   
   const [ test, setTest ] = useState()
   const ref = useRef(0)
+
+  fetch('https://reqres.in/api/users')
+    .then(res => {
+        return res.json()
+    })
+    .then(data => {
+        setTest(data)
+        console.log(data)})
   // setTest("hi")
+
 
   return (
     <>
