@@ -3,10 +3,10 @@ import React, { useState, useRef } from 'react';
 import Photos from './Photos';
 
 function App() {
-  const ref = useRef(0)
-
+  
   const [ test, setTest ] = useState()
-  setTest("hi")
+  const ref = useRef(0)
+  // setTest("hi")
 
   return (
     <>
