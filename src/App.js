@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Photos from './Photos';
 
 function App() {
@@ -7,19 +7,23 @@ function App() {
   const [ test, setTest ] = useState()
   const ref = useRef(0)
 
-  fetch('https://reqres.in/api/users')
-    .then(res => {
-        return res.json()
-    })
-    .then(data => {
-        setTest(data)
-        console.log(data)})
+  useEffect(() => {
+    fetch('https://reqres.in/api/users')
+      .then(res => {
+          return res.json()
+      })
+      .then(data => {
+          setTest(data)
+          console.log(data)})
+
+  }, [])
   // setTest("hi")
 
 
   return (
     <>
       <Photos test={test} />
+      {/* {test && <Photos test={test} />} */}
     </>
   );
 }
