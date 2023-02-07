@@ -9,7 +9,8 @@ export default function Photos() {
 
     return (
         <>
-
+            <h2>This is a title</h2>
+            <div>Hello everyone</div>
         </>
     )
 }
