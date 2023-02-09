@@ -11,9 +11,9 @@ export default function Photos({users}) {
         <>
             <h2>This is a title</h2>
             <div>Hello everyone</div>
-            <div className=>
+            <div className="users">
                 {users.map((user) => (
-                    <div key={user.id}>
+                    <div className="user-children" key={user.id}>
                         <h3>{user.first_name} {user.last_name}</h3>
                         <img src={user.avatar}/>
                     </div>
