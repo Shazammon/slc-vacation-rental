@@ -23,7 +23,7 @@ code {
 .user-children {
   width: 200px;
   margin: 100px;
-  /* margin: auto; */
+  margin: auto;
 }
 
 .user-children img {
