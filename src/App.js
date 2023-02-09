@@ -15,6 +15,13 @@ function App() {
       .then(data => {
           setUsers(data.data)
           console.log(data)})
+      .catch(err => {
+        if (err.name === 'AbortError') {
+          console.log('fetch aborted')
+        } else {
+          console.log(err.message)
+        }
+      })
 
   }, [])
   // setTest("hi")
