@@ -14,9 +14,18 @@ code {
 
 .users {
   display: flex;
-  flex-flow: row wrap
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start
 }
 
 .user-children {
-  
+  width: 200px;
+  margin: 100px;
+  /* margin: auto; */
+}
+
+.user-children img {
+  width: 200px;
 }
