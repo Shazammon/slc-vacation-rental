@@ -21,21 +21,21 @@ function App() {
   }
 
   useEffect(() => {
-    getUserDataTwo(url)
-    // fetch('https://reqres.in/api/users')
-    //   .then(res => {
-    //       return res.json()
-    //   })
-    //   .then(data => {
-    //       setUsers(data.data)
-    //       console.log(data)})
-    //   .catch(err => {
-    //     if (err.name === 'AbortError') {
-    //       console.log('fetch aborted')
-    //     } else {
-    //       console.log(err.message)
-    //     }
-    //   })
+    // getUserDataTwo(url)
+    fetch('https://reqres.in/api/users')
+      .then(res => {
+          return res.json()
+      })
+      .then(data => {
+          setUsers(data.data)
+          console.log(data)})
+      .catch(err => {
+        if (err.name === 'AbortError') {
+          console.log('fetch aborted')
+        } else {
+          console.log(err.message)
+        }
+      })
 
   }, [])
 
