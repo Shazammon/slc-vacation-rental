@@ -7,6 +7,10 @@ function App() {
   const [ users, setUsers ] = useState()
   const ref = useRef(0)
 
+  const getUserData = async () => {
+    const response = fetch('https://reqres.in/api/users')
+  }
+
   useEffect(() => {
     fetch('https://reqres.in/api/users')
       .then(res => {
@@ -24,6 +28,8 @@ function App() {
       })
 
   }, [])
+
+
   // setTest("hi")
 
 
