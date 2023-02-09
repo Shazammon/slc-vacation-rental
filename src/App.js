@@ -4,7 +4,7 @@ import Photos from './Photos';
 
 function App() {
   
-  const [ test, setTest ] = useState()
+  const [ users, setUsers ] = useState()
   const ref = useRef(0)
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function App() {
           return res.json()
       })
       .then(data => {
-          setTest(data)
+          setUsers(data.data)
           console.log(data)})
 
   }, [])
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Photos test={test} />
+      {users && <Photos users={users} />}
       {/* {test && <Photos test={test} />} */}
     </>
   );

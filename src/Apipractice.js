@@ -1,4 +1,4 @@
-import fetch from "node-fetch"
+// import fetch from "node-fetch"
 
 // fetch('https://reqres.in/api/users')
 //     .then(res => {
@@ -8,7 +8,9 @@ import fetch from "node-fetch"
 //         setBlogs(data)
 //         console.log(data)})
 
-fetch('https://reqres.in/api/users')
-    .then(res => {
-        console.log(res)
-    })
+// export default
+
+// fetch('https://reqres.in/api/users')
+//     .then(res => {
+//         console.log(res)
+//     })
