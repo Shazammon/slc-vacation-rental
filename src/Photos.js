@@ -7,6 +7,8 @@ export default function Photos({users}) {
     //     const data = current.
     // }
 
+    // this is just a practice
+
     return (
         <>
             <h2>This is a title</h2>

@@ -21,11 +21,24 @@ code {
 }
 
 .user-children {
-  width: 200px;
-  margin: 100px;
-  margin: auto;
+  width: 100px;
+  margin: 50px;
+  /* margin: auto; */
 }
 
 .user-children img {
-  width: 200px;
+  width: 100px;
 }
+
+@media (min-width:768px) {
+  .user-children {
+    width: 400px;
+    margin: 100px;
+    margin: auto;
+  }
+  .user-children img {
+    width: 400px;
+  }
+}
+
+
