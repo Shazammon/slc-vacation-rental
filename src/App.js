@@ -6,26 +6,36 @@ function App() {
   
   const [ users, setUsers ] = useState()
   const ref = useRef(0)
+  const url = 'https://reqres.in/api/users'
 
   const getUserData = async () => {
-    const response = fetch('https://reqres.in/api/users')
+    const response = await fetch('https://reqres.in/api/users')
+    const jsonData = await response.json()
+    setUsers(jsonData.data)
+  }
+
+  const getUserDataTwo = async (url) => {
+    const responseData = await fetch(url)
+    const jsonDataTwo = await responseData.json()
+    setUsers(jsonDataTwo.data)
   }
 
   useEffect(() => {
-    fetch('https://reqres.in/api/users')
-      .then(res => {
-          return res.json()
-      })
-      .then(data => {
-          setUsers(data.data)
-          console.log(data)})
-      .catch(err => {
-        if (err.name === 'AbortError') {
-          console.log('fetch aborted')
-        } else {
-          console.log(err.message)
-        }
-      })
+    getUserDataTwo(url)
+    // fetch('https://reqres.in/api/users')
+    //   .then(res => {
+    //       return res.json()
+    //   })
+    //   .then(data => {
+    //       setUsers(data.data)
+    //       console.log(data)})
+    //   .catch(err => {
+    //     if (err.name === 'AbortError') {
+    //       console.log('fetch aborted')
+    //     } else {
+    //       console.log(err.message)
+    //     }
+    //   })
 
   }, [])
 
